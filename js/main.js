@@ -430,19 +430,19 @@ $(this).keyup(function(e){
 
 
 // [SEARCH] function sets unfiltered to hidden and .hide() them. Sets filtered to show and .show() them.
-$('#searchbox').on("keyup", function(){
+$('#searchbox').keyup(function(){
 	"use strict";
-	console.log("Is this firing in iPhone 6?");
 	var searchValue = $("#searchbox").val().toLowerCase();	
 	var targetImg = $(".gallery").find("img");
 	var searchThis;
 	targetImg.each(function(){		
-		searchThis = $(this).attr("alt").toLowerCase() + $(this).attr("title").toLowerCase();		
-		if (searchThis.indexOf(searchValue) !== -1){
-			$(this).attr("class" , "image").parent().parent().fadeIn(1000); 
-        } else {
-			$(this).attr("class" , "image_hide").parent().parent().fadeOut(1000); 
-        }
+		searchThis = $(this).attr("alt").toLowerCase() + $(this).attr("title").toLowerCase();
+		$(this).parent().parent().fadeOut(300)
+			if (searchThis.indexOf(searchValue) !== -1){
+				$(this).attr("class", "image").parent().parent().fadeIn(600); 
+			} else {
+				$(this).attr("class", "image_hide"); 
+			}
 	});	
 
 });

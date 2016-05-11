@@ -197,6 +197,12 @@ function resetForm() {
     });
 }
 
+//No conflict fix
+(function ($) {
+	"use strict";
+   $(document);
+}(jQuery));
+
 /* ================================= 
   APPEND THE DOCUMENT
 ==================================== */
@@ -427,13 +433,17 @@ $(this).keyup(function(e){
 $('#searchbox').keyup(function(){
 	"use strict";
 	var searchValue = $("#searchbox").val().toLowerCase();	
-	
-	$(".gallery").find("img").filter(function(index, element){
-		return !$(element).attr("alt").toLowerCase().includes(searchValue) && !$(element).attr("title").toLowerCase().includes(searchValue);			
-	}).attr("class", "image_hide").parent().fadeOut(1000);
-	$(".gallery").find("img").filter(function(index, element){
-		return $(element).attr("alt").toLowerCase().includes(searchValue) && $(element).attr("alt").toLowerCase().includes(searchValue);
-	}).attr("class" , "image").parent().fadeIn(1000);  
+	var targetImg = $(".gallery").find("img");
+	var searchThis;
+	targetImg.each(function(){		
+		searchThis = $(this).attr("alt").toLowerCase() + $(this).attr("title").toLowerCase();		
+		if (searchThis.indexOf(searchValue) !== -1){
+			$(this).attr("class" , "image").parent().parent().fadeIn(1000); 
+        } else {
+			$(this).attr("class" , "image_hide").parent().parent().fadeOut(1000); 
+        }
+	});	
+
 });
 
 //Reset [SEARCH] input field without reloading browser.

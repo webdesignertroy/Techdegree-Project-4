@@ -430,7 +430,7 @@ $(this).keyup(function(e){
 
 
 // [SEARCH] function sets unfiltered to hidden and .hide() them. Sets filtered to show and .show() them.
-$('#searchbox').keyup(function(){
+$('#searchbox').on("keyup", function(){
 	"use strict";
 	var searchValue = $("#searchbox").val().toLowerCase();	
 	var targetImg = $(".gallery").find("img");

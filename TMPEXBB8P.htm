@@ -1,0 +1,1059 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: https://fonts.googleapis.com/css?family=Bowlby+One%7COpen+Sans:400,300,300italic,700,700italic" type="text/css">
+<style type="text/css">
+
+@font-face {
+  font-family: 'Bowlby One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bowlby One'), local('BowlbyOne'), url(https://fonts.gstatic.com/s/bowlbyone/v7/xBO3ZdzVBqGO6i8GOIrhUC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxrfB31yxOzP-czbf6AAKCVo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxp_TkvowlIOtbR7ePgFOpF4.ttf) format('truetype');
+}
+
+
+</style>
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: css/normalize.css">
+<style type="text/css">
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* Lists
+   ========================================================================== */
+
+/**
+ * Remove default list styles, margins and padding.
+ */
+
+ ol, 
+ ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+</style>
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: css/main.css">
+<style type="text/css">
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+	box-sizing: border-box;
+	margin-bottom: 0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	background: rgba(255,252,250,1.00);  
+	position: relative;
+}
+h1 {
+	font-family: 'Bowlby One', sans-serif;
+	letter-spacing: 0.06em;
+	margin: 0;
+	padding-top: 1%;
+	padding-bottom: 0;
+	font-weight: 300;
+	text-transform: uppercase;
+	background: rgba(255,255,255,1.00);
+	font-size: 1.7em;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #FF6400;
+	text-align: center;
+}
+p {
+	color: #303030;
+}
+image-link, video-link {
+	display: block;
+	margin-top: -5px
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.container:before {
+	content: "Click Anywhere to Close(X)";
+	color: #969696;
+	font-size: .8em;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	padding: 1em;
+	top: 0;
+	left: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.container {
+	background: rgba(0,0,0,0.90);
+	box-shadow: inset 0px 20px 27px 0px rgba(0,0,0,0.54), inset 0px 20px 27px 0px rgba(0,0,0,0.25), inset 0px 20px 50px 0px rgba(0,0,0,0.25);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 998;
+	display: none;
+	margin: 0 auto 0 auto;
+	cursor: url(images/photos/close-icon.png), crosshair;
+}
+#overlay img {
+	position: fixed;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	top: 3vh;
+	bottom: 5vh;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin: auto;
+	width: 100%;
+}
+#overlay iframe {
+	left: 5vw;
+	right: 5vw;
+	width: 90vw;
+	top: 3vh;
+	bottom: 5vh;
+	height: 40vh;
+	position: absolute;
+	margin: auto;
+	border: none;
+}
+
+#overlay p {
+	position: fixed;
+	color: #ccc;
+	max-width: 600px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 10px;
+	bottom: 8vh;
+	text-shadow: 1px 1px 5px rgba(0,0,0,1.0), -1px -1px 5px rgba(0,0,0,1.0);
+}
+.arrow-left {
+	width: 60px;
+	height: 90px;
+	background: url(images/photos/left-arrow36x63.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size: 2em;
+	color: rgba(0,0,0,0.85);
+	position: fixed;
+	z-index: 3001;
+	top: calc(50vh - 45px);
+	left: 10px;
+	cursor: pointer;
+	display: none;
+}
+.arrow-right {
+	width: 60px;
+	height: 90px;
+	background: url(images/photos/right-arrow36x63.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size: 2em;
+	color: rgba(0,0,0,0.85);
+	position: fixed;
+	z-index: 3001;
+	top: calc(50vh - 45px);
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
+/* ================================= 
+  Page Elements
+==================================== */
+.wrapper {
+	width: 100%;
+	padding-bottom: 70px;
+}
+.header{
+	background: rgba(255,255,255,1.0);
+	z-index: 900;
+	position: fixed;
+	width: 100%;
+	top: 0; 
+	left: 0;	
+}
+.gallery {
+	display: block;
+	text-align: center;
+	max-width: 980px;
+	margin: 0 auto;
+	margin-top: 145px;
+	font-size: 0px; /* white-space caused by inline-block below */
+}
+.col, .col-hide {
+	display: inline-block;
+	position: relative;
+	margin: 30px;
+}
+
+.image-link:focus, video-link:focus {
+	outline: none;
+}
+.image, .image_hide {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 0;
+	margin: 0;
+	width: 200px;
+	height: 200px;
+}
+.caption-info {
+	color: #FFF8F3;
+	text-align: left;
+	position: absolute;
+	font-size: 13.5px;
+	z-index: 100;
+	margin: 0;
+	top: 0;
+	width: 200px;
+	background: rgba(255,100,0,0.90);
+	border: 3px solid rgba(208,81,0,1.00);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	transition: 0.5s;
+	overflow: hidden;
+	opacity: 0;
+}
+.caption-info:after {
+	content: url(images/photos/link-icon-20x20.png);
+	position: absolute;
+	left: 82px;
+	bottom: 15px;
+	transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-webkit-transition: 0.4s ease-out;
+}
+.caption-info:hover:after {
+	-webkit-transform: rotate(75deg);
+	-moz-transform: rotate(75deg);
+	transform: rotate(75deg);
+}
+.caption-style {
+	font-weight: bold;
+	font-size: 1.1em;
+	text-decoration: underline;
+	display: inline-block;
+	margin-bottom: 3px;
+	cursor: not-allowed;
+	text-transform: uppercase;
+}
+span.caption-info {
+	position: absolute;
+	display: block;
+	padding: 1.3em .5em 1em .5em;
+	text-align: center;
+	bottom: 0;
+}
+.footer {
+	min-height: 30px;
+	background: #FF9A58;
+	text-align: center;
+}
+.copyright {
+	letter-spacing: 0.13em;
+	padding: 10px 1em;
+	color: #8A3600;
+	font-size: .7em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.response-style {
+	font-size: 34px;
+	color: #FF9A58;
+	position: fixed;
+	width: 500px;
+	height: 200px;
+	margin: 5% auto; 
+	top: 40vh;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+#response {
+	display: none;
+}
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+/* ================================= 
+  Form Elements
+==================================== */
+.searchbox-container {	
+	padding: 0 20px 0 20px;
+	display: block;
+	text-align: center;
+	margin: 0;
+}
+.form-container {
+	position: relative;
+	padding: 15px 0;
+	max-width: 460px;
+	margin: 0 auto;
+}
+input[type=text] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 3px solid #FF6400;
+	padding: .5em .8em;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	width: 100%;
+	outline: none;
+	transition: 0.5s;
+	font-style: normal;
+	position: relative;
+	z-index: 99;
+	font-size: 16px;
+}
+input[placeholder] {
+	color: rgba(221,86,0,1);
+}
+input[type=text]:focus {
+	border: 3px solid #BA4900;
+	background: rgba(34,34,34,0.03);
+}
+button[id=reset] {
+	position:absolute;
+	margin-top: 15px;
+	top: 1px;
+	right: 1.3em;
+	width: 25px;
+	height: 40px;
+	background: url(images/photos/reset15x15.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: none;
+	z-index: 100;
+	outline: none;
+}
+/*----- Placehoder Hack -----*/
+
+input::-webkit-input-placeholder {
+	font-style: normal;
+	font-weight: 300;
+	text-align: left;
+	font-size: 16px;
+	color: #A6A6A6;
+}
+input::-moz-placeholder {
+	font-style: normal;
+	font-weight: 300;
+	text-align: left;
+	font-size: 16px;
+	color: #A6A6A6;
+}
+input:-moz-placeholder {
+	font-style: normal;
+	font-weight: 300;
+	text-align: left;
+	font-size: 16px;
+	color: #A6A6A6;
+}
+input:-ms-input-placeholder {
+	font-style: normal;
+	font-weight: 300;
+	text-align: left;
+	font-size: 16px;
+	color: #A6A6A6;
+}
+/* ================================= 
+  Animation
+==================================== */
+
+/* NOTE: @Tester - This animation was originally for <title>.
+   But, it was giving off a CSS validation error that should be allowed.
+   I'm keeping this section for my notes */
+   
+/*.rubberBand {
+	-webkit-animation-name: rubberBand;
+	animation-name: rubberBand;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+ @-webkit-keyframes rubberBand {
+	 0% {
+		 -webkit-transform: scale3d(1, 1, 1);
+		 transform: scale3d(1, 1, 1);
+	}
+	 30% {
+		 -webkit-transform: scale3d(1.25, 0.75, 1);
+		 transform: scale3d(1.25, 0.75, 1);
+	}
+	 40% {
+		 -webkit-transform: scale3d(0.75, 1.25, 1);
+		 transform: scale3d(0.75, 1.25, 1);
+	}
+	 50% {
+		 -webkit-transform: scale3d(1.15, 0.85, 1);
+		 transform: scale3d(1.15, 0.85, 1);
+	}
+	 65% {
+		 -webkit-transform: scale3d(.95, 1.05, 1);
+		 transform: scale3d(.95, 1.05, 1);
+	}
+	 75% {
+		 -webkit-transform: scale3d(1.05, .95, 1);
+		 transform: scale3d(1.05, .95, 1);
+	}
+	 100% {
+		 -webkit-transform: scale3d(1, 1, 1);
+		 transform: scale3d(1, 1, 1);
+	}
+}
+ @keyframes rubberBand {
+	 0% {
+	 -webkit-transform: scale3d(1, 1, 1);
+	 transform: scale3d(1, 1, 1);
+	}
+	 30% {
+	 -webkit-transform: scale3d(1.25, 0.75, 1);
+	 transform: scale3d(1.25, 0.75, 1);
+	}
+	 40% {
+	 -webkit-transform: scale3d(0.75, 1.25, 1);
+	 transform: scale3d(0.75, 1.25, 1);
+	}
+	 50% {
+	 -webkit-transform: scale3d(1.15, 0.85, 1);
+	 transform: scale3d(1.15, 0.85, 1);
+	}
+	 65% {
+	 -webkit-transform: scale3d(.95, 1.05, 1);
+	 transform: scale3d(.95, 1.05, 1);
+	}
+	 75% {
+	 -webkit-transform: scale3d(1.05, .95, 1);
+	 transform: scale3d(1.05, .95, 1);
+	}
+	 100% {
+	 -webkit-transform: scale3d(1, 1, 1);
+	 transform: scale3d(1, 1, 1);
+	}
+}*/
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 768px) {
+	#overlay img {
+		padding-left: 15%;
+		padding-right: 15%;
+		top: 2vh;
+	}
+	#overlay p {
+		font-size: 1.2em;
+		font-weight: 300;
+		bottom: 7vh;
+	}
+	.container:before {
+		display: none;
+	}
+	#overlay iframe {
+		left: 10vw;
+		right: 10vw;
+		width: 80vw;
+		top: 2vh;
+		bottom: 8vh;
+		height: 60vh;
+	}
+	.wrapper {
+		height: calc(100vh - 35px);
+	}
+	.gallery {
+		padding-bottom: 100px;
+	}
+	.footer {
+		position: fixed;
+		z-index: 800;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+	}
+}
+/* @Tester: Please note that the width of the browser's native scrollbar is around 12px */
+@media (min-width: 992px){	
+	.col, .col-hide {
+	margin: 30px 60px 30px -1px;
+	}	
+	div.col:nth-of-type(4n+0), div.col-hide:nth-of-type(4n+0) {
+		margin-right: 0;
+		margin-left: 0;
+	}	
+	div.col:last-of-type {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+@media (min-width: 1024px) {
+	#overlay img {
+		padding-left: 25%;
+		padding-right: 25%;
+	}
+	#overlay iframe {
+		left: 20vw;
+		right: 20vw;
+		width: 55vw;
+		max-width: 980px;
+		top: 3vh;
+		bottom: 8vh;
+		height: 60vh;
+	}
+}
+@media (max-height: 420px) {
+	#overlay iframe {
+		height: 80vh;
+	}
+}
+
+</style>
+<title>The Gallery</title>
+</head>
+
+<body>
+<div class="wrapper">  
+  <header class="header">
+    <div class="title">
+      <h1>The Gallery</h1>
+    </div>
+    <div class="searchbox-container">
+      <form>
+        <div class="form-container">
+          <input type="text" id="searchbox" name="searchbox" placeholder="Search...">
+          <button id="reset" name="reset" title="Reset"></button>
+        </div>
+      </form>
+    </div>
+  </header>
+  <!--/header-->
+  <div class="gallery">
+    <div class="col"> <a href="images/photos/01.jpg" class="image-link"><img src="images/thumbs/01.jpg" alt="I love hay bales. Took this snap on a drive through the countryside past some straw fields."  title="Hay Bales" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/02.jpg" class="image-link"><img src="images/thumbs/02.jpg" alt="The lake was so calm today. We had a great view of the snow on the mountains from&nbsp;here."  title="Lake" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/03.jpg" class="image-link"><img src="images/thumbs/03.jpg" alt="I hiked to the top of the mountain and got this picture of the canyon and trees&nbsp;below."  title="Canyon" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/04.jpg" class="image-link"><img src="images/thumbs/04.jpg" alt="It was amazing to see an iceberg up close, it was so cold but didn’t snow&nbsp;today."  title="Iceberg" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/05.jpg" class="image-link"><img src="images/thumbs/05.jpg" alt="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the&nbsp;canyons."  title="Desert" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/06.jpg" class="image-link"><img src="images/thumbs/06.jpg" alt="Fall is coming, I love when the leaves on the trees start to change&nbsp;color."  title="Fall" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/07.jpg" class="image-link"><img src="images/thumbs/07.jpg" alt="I drove past this plantation yesterday, everything is so&nbsp;green!"  title="Plantation" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/08.jpg" class="image-link"><img src="images/thumbs/08.jpg" alt="My summer vacation to the Oregon Coast. I love the sandy&nbsp;dunes!"  title="Dunes" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/09.jpg" class="image-link"><img src="images/thumbs/09.jpg" alt="We enjoyed a quiet stroll down this countryside&nbsp;lane."  title="Countryside Lane" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/10.jpg" class="image-link"><img src="images/thumbs/10.jpg" alt="Sunset at the coast! The sky turned a lovely shade of&nbsp;orange."  title="Sunset" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/11.jpg" class="image-link"><img src="images/thumbs/11.jpg" alt="I did a tour of a cave today and the view of the landscape below was&nbsp;breathtaking."  title="Cave" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="images/photos/12.jpg" class="image-link"><img src="images/thumbs/12.jpg" alt="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came&nbsp;in."  title="Bluebells" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="https://player.vimeo.com/video/71319358" class="image-link video"><img src="images/thumbs/13.jpg" alt="This is Travel Footage from eight countries." title="Travel Love" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="https://player.vimeo.com/video/72131557" class="image-link video"><img src="images/thumbs/14.jpg" alt="This film is a HDR hyperlapse postcard that will take you to a journey through Georgia." title="Hyper Travel" class="image" /><span class="caption-info"></span></a> </div>
+    <div class="col"> <a href="https://player.vimeo.com/video/52742614" class="image-link video"><img src="images/thumbs/15.jpg" alt="A mix of memories from past years adventures for my travelblog on ✈ flysleepy.com." title="Travel" class="image" /><span class="caption-info"></span></a> </div>
+  </div>
+</div>
+<div id="response" class="response-style clearfix"></div>
+<!--/.gallery-->
+<footer class="footer">
+  <div id="copyright" class="copyright">&copy; The Gallery</div>
+</footer>
+<!--/footer--> 
+<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script> 
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script> 
+<script>
+//Preload Images
+function preloader() {
+	// Is there a method that can auto tally images in a folder? Revisit.
+	var imageFolder = ['link-icon-20x20.png','right-arrow36x63.png','close-icon.png','left-arrow36x63.png','01.jpg','02.jpg','03.jpg','04.jpg','05.jpg','06.jpg','07.jpg','08.jpg','09.jpg','10.jpg','11.jpg','12.jpg']; //For now, manually adding new images
+	for( var i = 0; i < imageFolder.length; i++){					
+		var img  = new Image();
+		img.src = "images/photos/" + imageFolder[i];		
+	}
+}
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			if (oldonload) {
+				oldonload();
+			}
+			func();
+		}
+	}
+}
+addLoadEvent(preloader);
+</script>
+</body>
+</html>
